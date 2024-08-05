@@ -1,0 +1,9 @@
+{
+  "name": "file-manager",
+  "version": "0.0.0",
+  "description": "Service For Upload File",
+  "main": "src/index.ts",
+  "author": "@AnataAria",
+  "license": "MIT",
+  "private": false
+}

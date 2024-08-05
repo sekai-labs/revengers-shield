@@ -1,0 +1,6 @@
+services:
+  file-manager:
+    image: file-manager:${TAG}
+    build:
+      context: .
+      dockerfile: ./services/file-manager/Dockerfile

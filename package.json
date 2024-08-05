@@ -1,0 +1,24 @@
+{
+  "name": "revengers-shield",
+  "version": "0.0.0",
+  "description": "A Backend Application For Anti Threat Mobile Vehicle Written By Ts",
+  "repository": "https://github.com/sekai-labs/revengers-shield",
+  "author": "@AnataAria",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "./services/*",
+    "./packages/*"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "tsc": "^2.0.4"
+  },
+  "dependencies": {
+    "eslint": "^9.8.0",
+    "prettier": "^3.3.3"
+  }
+}
