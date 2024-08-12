@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Database model of revengers shield",
   "main": "src/index.ts",
+  "types": "src/index.d.ts",
   "author": "@AnataAria",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "knex": "^3.1.0",
     "pg": "^8.12.0"
