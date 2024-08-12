@@ -16,6 +16,7 @@
   },
   "references": [
     { "path": "./services/file-manager" },
-    { "path": "./packages/databases"}
+    { "path": "./packages/databases"},
+    { "path": "./packages/email"}
   ]
 }
