@@ -1,7 +1,7 @@
 import { Knex } from "knex";
 import { Connector } from "@helpers/index.js";
 
-export abstract class BaseModel {
+export abstract class BaseModel <T extends {}> {
     public tableName: string;
     public knexInstance: Knex;
 
@@ -12,5 +12,9 @@ export abstract class BaseModel {
 
     public get knex(): Knex {
         return this.knexInstance;
+    }
+
+    public get default(): Knex.QueryBuilder<T,T[]> {
+        return this.knex<T,T[]>(this.tableName);
     }
 }
